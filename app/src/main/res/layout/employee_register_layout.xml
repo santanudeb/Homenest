@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="15sp"
+            android:textSize="25sp"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="35dp"/>
+
+        <EditText
+            android:id="@+id/etemployeename"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textSize="25sp"
+            android:text="Phone"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"/>
+
+        <EditText
+            android:id="@+id/etemployeephone"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:textSize="25sp"
+            android:text="Email"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"/>
+
+        <EditText
+            android:id="@+id/etemployeeemail"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:textSize="25sp"
+            android:text="Password"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"/>
+
+        <EditText
+            android:id="@+id/etemployeepassword"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:textSize="25sp"
+            android:text="Type"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgtype"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rbtypeelectrician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="24sp"
+                android:text="electrician"
+                android:layout_marginTop="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rbtypejanitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="24sp"
+                android:text="janitor" />
+
+            <RadioButton
+                android:id="@+id/rbtypeplumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="24sp"
+                android:text="plumber" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnemployeeregister"
+            android:textSize="28sp"
+            android:text="Employee Register"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="335dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="1sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40sp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
